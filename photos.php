@@ -7,7 +7,7 @@ if ($handle = opendir("uploads/")) {
 
         if ($entry != "." && $entry != "..") {
 
-            echo "<div class='entry'><img class='thumbnail' width='200' height='150' src='uploads/$entry'><br><a href='uploads/$entry'>$entry</a><br></entry>";
+            echo "<div class='entry'><img class='thumbnail' width='200' height='150' src='uploads/$entry'><br><a href='uploads/$entry'>$entry</a><br></div>";
         }
     }
 
