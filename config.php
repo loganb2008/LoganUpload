@@ -7,6 +7,6 @@ $config = array(
     "tlerror" => "That file is too large. Change this in the config file.", // Error message for too large
     "fakeimageerror" => "That doesn't seem to be an image. Please select an image. Change this in the config file", // Fake image error
     "maxsize" => 10000000, // Max file size in bytes. Default 10MB (10000000 Bytes)
-    "protected" => false, // Password Protection, true = on, false = off
-    "password" => "default" // Password for if you enabled protection
+    "protected" => false // IP Whitelist, true = on, false = off
 );
+$allowedip = array("127.0.0.1", "0.0.0.0"); // Only for if you have IP Whitelist enabled, put allowed ips.
