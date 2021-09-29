@@ -1,6 +1,6 @@
 <?php
 $config = array(
-    "imgpath" => "/hxpload/uploads/", // Put the location of your image directory here (NOT FULL PATH)
+    "imgpath" => "/loganupload/uploads/", // Put the location of your image directory here (NOT FULL PATH)
     "pagetitle" => "Your HxPload Panel", // Put the title of the page here
     "pagename" => "HxPload", // Put want you want the title text on the page to say
     "fterror" => "That file type isn't allowed. Must be an image. Change this in the config.php file.", // Error message for invalid file type
