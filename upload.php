@@ -1,5 +1,10 @@
 <?php
 include("config.php");
+if($config['protected'] === true) {
+    if(!in_array($_SERVER['REMOTE_ADDR'], $allowedip)) {
+     die("<h1>This page is IP protected.");
+    }
+}
 function genMediaID($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
