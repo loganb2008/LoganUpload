@@ -1,5 +1,10 @@
 <?php
 include("config.php");
+if($config['protected'] === true) {
+    if(!in_array($_SERVER['REMOTE_ADDR'], $allowedip)) {
+     die("<h1>This page is IP protected.");
+    }
+}
 ?>
 <html>
 <head>
